@@ -1,0 +1,64 @@
+header{
+    width: 100%;
+}
+.headerdiv{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logodiv{
+    padding-top: 42px;
+    display: flex;
+}
+.navbar{
+    padding-top: 54px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    vertical-align: middle;
+}
+.navbar nav, ul, li, a{
+    display: flex;
+    justify-content: space-between;
+    gap: 42px;
+}
+.navbar nav{
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}
+.navbar a{
+    font-size: 14px;
+    color: #000000E5;
+    gap: 42px;
+
+}
+.sell{
+    padding-top: 42px;
+    display: flex;
+    
+}
+.sell a{
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #29B24E;
+    padding: 13px 26px 13px 26px;
+    border-radius: 12px;
+}
+@media(width<=1024px){
+    .logodiv{
+        padding-top: 38px;
+    }
+    .navbar{
+        display: none;
+    }
+    
+
+
+}
+section{
+    width: 100%;
+    padding-top: 41px;
+}
