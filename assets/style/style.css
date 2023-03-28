@@ -1,3 +1,4 @@
+body{background-color: #C3C3C3;}
 header{
     width: 100%;
 }
@@ -61,4 +62,19 @@ header{
 section{
     width: 100%;
     padding-top: 41px;
+
+}
+.sectiondiv{
+    width: 90%;
+    margin: auto;
+}
+aside{
+    padding-top: 32px;
+    width: 23%;
+    background-color: #F8F8F8;
+    border-radius: 24px;
+}
+.container{
+    margin: auto;
+    min-height: 751px;
 }
