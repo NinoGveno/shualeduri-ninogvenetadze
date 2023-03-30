@@ -212,3 +212,24 @@ input[type="checkbox"]{
    
 
 }
+.section2{
+    width: 100%;
+    padding-top:32px ;
+}
+.section2div{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    border: 1px solid #F8F8F8;
+    background-color: #F8F8F8;
+    border-radius: 24px;
+    width: 395px;
+    max-height: 424px;
+    
+}
+.card img{
+    width: 363px;
+    max-height: 202px;
+}
