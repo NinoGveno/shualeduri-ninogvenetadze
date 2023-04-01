@@ -471,3 +471,72 @@ hr{
     display: flex;
     gap: 24px;
 }
+.worddiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "word1 word2 word3"
+    'word4 word5 word6'
+    'word7 word5 word8'
+        '. word5 .'
+    'word9 word5 word10'
+    'word11 word5 word12'
+         '. word5 .'
+    'word13 word5 word14'
+         '. word5 .'
+         '. word5 .';
+    
+}
+.word1{
+    grid-area:word1 ;
+}
+.word2{
+    grid-area: word2;
+}
+.word3{
+    grid-area: word3;
+}
+.word4{
+    grid-area: word4;
+}
+.word5{
+    grid-area: word5;
+}
+.word6{
+    grid-area: word6;
+}
+
+.word7{
+    grid-area: word7;
+}
+.word8{
+    grid-area: word8;
+}
+.word9{
+    grid-area: word9;
+}
+.word10{
+    grid-area: word10;
+}
+.word11{
+    grid-area: word11;
+}
+.word12{
+    grid-area: word12;
+}
+.word13{
+    grid-area: word13;
+}
+.word14{
+    grid-area: word14;
+}
+.word1, .word2, .word3, .word7, .word8, .word11, .word12{
+    font-size: 12px;
+    color: #000000;
+    opacity: 60%;
+    font-family: 'Poppins';
+}
+.word4, .word5, .word6, .word9, .word10, .word13, .word14{
+    font-size: 14px;
+    color: #000000;
+    font-family: 'Poppins';
+}
