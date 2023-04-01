@@ -279,7 +279,7 @@ input[type="checkbox"]{
 }
 .VIP{
     position: absolute;
-    padding: 11px 6px;
+    padding: 6px 11px;
     border: 1px solid #29B24E;
     background-color: #29B24E;
     border-radius: 15px;
@@ -399,3 +399,65 @@ hr{
     
 
 }
+/* contact page */
+
+.contact1{
+    padding-top: 58px;
+    width: 100%;
+}
+.contactdiv{
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+.contactdiv img{
+    width: 50%;
+    min-height: 732px;
+}
+.contactsection1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 46%;
+    border: 1px solid #F8F8F8;
+    border-radius: 24px;
+    background-color: #F8F8F8;
+    width: 100%; 
+    min-height: 732px;
+}
+.contactsection2{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  
+} 
+.contactsection2 ul, li{
+    display: flex; 
+    justify-content: space-between;
+}
+.firstli{
+    padding: 5px 11px;
+    border: 1px solid #29B24E;
+    background-color: #29B24E;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+}
+.textdiv{
+    width: 90%;
+}
+.textdiv h3{
+    font-size: 22px;
+    font-family: 'Poppins';
+    color: #000000;
+    Opacity: 90%;
+
+}
+.textdiv p{
+    font-size: 14;
+    color: #000000;
+    opacity: 60%;
+    font-family: 'Poppins';
+}
+
+  
