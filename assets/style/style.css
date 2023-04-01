@@ -303,8 +303,6 @@ input[type="checkbox"]{
     font-family: 'poppins';
     font-weight: 500 ;
     color: #000000;
-    /* display: flex;
-    justify-content: center; */
     margin-left: 16px;
    
 
@@ -406,34 +404,28 @@ hr{
     width: 100%;
 }
 .contactdiv{
-    width: 90%;
+    width: 94%;
     margin: auto;
     display: flex;
 }
 .contactdiv img{
-    width: 50%;
+    width: 55%;
     min-height: 732px;
 }
 .contactsection1{
-    display: flex;
-    flex-wrap: wrap;
-    width: 46%;
+    width: 55%;
     border: 1px solid #F8F8F8;
     border-radius: 24px;
     background-color: #F8F8F8;
-    width: 100%; 
+    /* width: 100%;  */
     min-height: 732px;
+    padding-top: 30px;
+    padding-left: 40px;
 }
 .contactsection2{
-    display: flex;
-    justify-content: space-between;
     width: 90%;
   
 } 
-.contactsection2 ul, li{
-    display: flex; 
-    justify-content: space-between;
-}
 .firstli{
     padding: 5px 11px;
     border: 1px solid #29B24E;
@@ -451,6 +443,9 @@ hr{
     font-family: 'Poppins';
     color: #000000;
     Opacity: 90%;
+    width: 70%;
+    margin-top: 24px;
+    margin-bottom: 12px;
 
 }
 .textdiv p{
@@ -459,5 +454,20 @@ hr{
     opacity: 60%;
     font-family: 'Poppins';
 }
-
-  
+.pclass{
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+.line2{
+    color: #ECECEC;
+    width: 100%;
+}
+hr{
+        border: none; 
+        border-top: 1px solid  #ECECEC; 
+        margin: 20px 0;
+}
+.Apartament {
+    display: flex;
+    gap: 24px;
+}
