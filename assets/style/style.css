@@ -61,11 +61,20 @@ header{
         display: none;
     }
     .sell a{display: none;}
-    .searchlogo{ display: flex;}
-    
-
-
+    .searchlogo{ display: flex;
+        border: 1px solid #F8F8F8;
+        background-color: #F8F8F8;
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+    }
 }
+@media(width<=768px){
+    body{
+        width: 375px;
+    }
+}
+
 section{
     max-width:1920px;
     width: 100%;
@@ -225,10 +234,14 @@ input[type="checkbox"]{
     .box p{
         font-size: 14px;
     }
-
-   
-
 }
+@media(width<=768px){
+    .mainimg img{
+        max-width: 335px;
+        min-height: 435px;
+    }
+}
+
 .section2{
    max-width:1920px;
     width: 100%;
@@ -276,6 +289,7 @@ input[type="checkbox"]{
     margin: auto;
     padding: 16px;
     
+    
 }
 .VIP{
     position: absolute;
@@ -290,6 +304,18 @@ input[type="checkbox"]{
     color: #FFFFFF;
     font-family: 'Poppins';
 }
+.icondiv{
+    position: absolute;
+    right: 0;
+    bottom: 110px;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    transform: translate(-50%, -50%);
+    
+}
+
+
 .card p{
     font-size: 16px;
     font-family: 'poppins';
@@ -360,17 +386,54 @@ hr{
 }
 @media(width<=1024px){
     .cardbox{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'card1 card2'
+        
+        'card3 card4'
+        'card5 card6'
+        'card7 card8'
+        ;
+    }
+    .card8{
+        grid-area: card8;
+    }
+    .card1{
+        grid-area: card1;
+    }
+    .card2{
+        grid-area: card2;
+    }
+    .card3{
+        grid-area: card3;
+    }
+    .card4{
+        grid-area: card4;
+    }
+    .card5{
+        grid-area: card5;
+    }
+    .card6{
+        grid-area: card6;
+    }
+    .card7{
+        grid-area: card7;
+    }
+    
+
+}
+@media(width<=768px){
+    .cardbox{
         grid-template-columns: 1fr;
-        grid-template-areas: 'card1'
+        grid-template-areas:'card1'
         'card2'
         'card3'
         'card4'
         'card5'
         'card6'
-        'card7'
-        ;
-    }
-    .card8{
+        'card7';
+
+     }
+     .card8{
         display: none;
     }
     .card1{
@@ -395,6 +458,7 @@ hr{
         grid-area: card7;
     }
     
+   
 
 }
 /* contact page */
@@ -471,72 +535,67 @@ hr{
     display: flex;
     gap: 24px;
 }
-.worddiv{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "word1 word2 word3"
-    'word4 word5 word6'
-    'word7 word5 word8'
-        '. word5 .'
-    'word9 word5 word10'
-    'word11 word5 word12'
-         '. word5 .'
-    'word13 word5 word14'
-         '. word5 .'
-         '. word5 .';
-    
-}
-.word1{
-    grid-area:word1 ;
-}
-.word2{
-    grid-area: word2;
-}
-.word3{
-    grid-area: word3;
-}
-.word4{
-    grid-area: word4;
-}
-.word5{
-    grid-area: word5;
-}
-.word6{
-    grid-area: word6;
+.roomacomodetion{
+    display: flex; 
+justify-content: space-between;} 
+.hour-24{
+    max-width: 120px;
 }
 
-.word7{
-    grid-area: word7;
+.room1, .room2, .room3{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;}
+ .price1{
+    display: flex;
+    justify-content: space-between;
+
+ } 
+ .price2{
+    display: flex;
+    justify-content: space-between;
+ }  
+   
+.price2 p{
+    font-size: 36px;
+    color: #29B24E;
 }
-.word8{
-    grid-area: word8;
-}
-.word9{
-    grid-area: word9;
-}
-.word10{
-    grid-area: word10;
-}
-.word11{
-    grid-area: word11;
-}
-.word12{
-    grid-area: word12;
-}
-.word13{
-    grid-area: word13;
-}
-.word14{
-    grid-area: word14;
-}
-.word1, .word2, .word3, .word7, .word8, .word11, .word12{
-    font-size: 12px;
+.price2 span{
     color: #000000;
-    opacity: 60%;
-    font-family: 'Poppins';
+    font-size: 16px;
+    font-family: 'Poppins'; 
 }
-.word4, .word5, .word6, .word9, .word10, .word13, .word14{
+
+.price3 a{
+    color: #29B24E;
+    padding: 13px 26px;
     font-size: 14px;
-    color: #000000;
     font-family: 'Poppins';
+    border: 1px solid #29B24E;
+    border-radius: 12px;
+    background-color: #F8F8F8;
+}
+.price4 a{
+    color: #FFFFFF;
+    padding: 13px 26px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    border: 1px solid #29B24E;
+    border-radius: 12px;
+    background-color: #29B24E;
+}
+
+@media(width<=1024px) {
+    .contactdiv{
+        flex-direction: column;
+    }
+    .roomacomodetion{
+        display: flex; 
+        /* flex-direction: column; */
+    } 
+    .room1, .room2, .room3{
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: column}
+
 }
