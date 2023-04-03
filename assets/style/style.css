@@ -474,7 +474,8 @@ hr{
 }
 .contactdiv img{
     width: 55%;
-    min-height: 732px;
+    /* min-height: 732px; */
+    height: 100%;
 }
 .contactsection1{
     width: 55%;
@@ -589,6 +590,14 @@ justify-content: space-between;}
     .contactdiv{
         flex-direction: column;
     }
+    .contactdiv img{
+        width: 94%;
+
+    }
+    .contactsection1{
+        width: 100%;
+        padding-left: 5px;
+    }
     .roomacomodetion{
         display: flex; 
         /* flex-direction: column; */
@@ -597,6 +606,54 @@ justify-content: space-between;}
         display: flex;
         justify-content: space-between; 
         flex-direction: column}
+}
+@media(width<=768px){
+    body{
+        max-width: 375px;
+       
+    }
+    .contactdiv img{
+        max-width: 94%;
+        min-height: 316px;
+        margin: auto;
+
+    }
+    .textdiv h3{
+        font-size: 18px;}
+    .textdiv p{
+            font-size: 12; } 
+    .pclass{
+            margin-top: 24px;
+            margin-bottom: 24px;
+            }
+     .room{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+     }
+     .roomacomodetion{
+        flex-direction: column;
+     } 
+     .roomclass{
+        display: flex;
+        justify-content: space-between;
+       
+     }      
+    .Apartament  li{
+        font-size: 14px;
+    } 
+    .price3 .price4{
+        max-width: 94%;
+        
+    } 
+    .price3 a, .price4 a{
+        padding: 13px auto;
+        justify-content: center;
+    }
+    .price1{
+        display: flex;
+        flex-direction: column;
+    }               
 
 }
 .contactsectionsecond{
@@ -636,8 +693,7 @@ justify-content: space-between;}
         flex-direction: column;
     }
     .contactcardbox{
-        display: grid;
-    justify-content: center;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "contactcard4";
     }
@@ -653,6 +709,15 @@ justify-content: space-between;}
     }
     .contactcard3{
         display: none;
+    }
+
+}
+@media(width<=768px){
+    .contactsectionsecond h3{
+        margin: 0;
+    }
+    .contactcardbox{
+
     }
 
 }
